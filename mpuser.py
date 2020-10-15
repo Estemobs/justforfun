@@ -14,10 +14,10 @@ async def on_ready():
 
 
 async def msg(ctx,userid:str,*,msg):
-       user = ctx.message.server.get_member(userid) or user = client.get_member(userid)
-       await client.send_message(user,msg)
-       
-       
+       user = ctx.message.guild.get_member(userid) or user = bot.get_member(userid)
+       await ctx.send(user,msg)
+
+
        
        
 bot.run('token')       

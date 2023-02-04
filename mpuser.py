@@ -8,7 +8,7 @@ bot = commands.Bot(command_prefix='r')
 
 @bot.listen()
 async def on_ready():
-    print('raid bot prêt')
+    print('Sa va péter !')
 
 
 
